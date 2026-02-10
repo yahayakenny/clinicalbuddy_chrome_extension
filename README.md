@@ -1,0 +1,1 @@
+# clinicalbuddy_chrome_extension
