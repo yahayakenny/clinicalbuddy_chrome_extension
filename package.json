@@ -1,0 +1,11 @@
+{
+  "name": "clinicalbuddy-extension",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i src/input.css -o sidepanel.css --minify",
+    "watch:css": "tailwindcss -i src/input.css -o sidepanel.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClinicalBuddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body class="min-h-screen m-0 p-0 font-sans text-sm text-gray-800 antialiased bg-primaryGray" style="font-family: 'Inter', system-ui, sans-serif;">
+  <header class="sticky top-0 z-10 border-b border-gray-200 bg-primaryGray px-3 py-2">
+    <div class="flex items-center gap-2">
+      <img src="images/logo.png" alt="" class="w-8 h-8 object-contain flex-shrink-0" />
+      <h1 class="m-0 text-base font-semibold text-gray-900">ClinicalBuddy</h1>
+    </div>
+    <div id="mode-bar" class="mt-2 hidden">
+      <div class="mode-segment flex rounded-lg border border-gray-300 bg-white overflow-hidden" role="group">
+        <button type="button" data-mode="red_flags" class="mode-btn flex-1 min-w-0 border-r border-gray-200 px-2 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 rounded-l-lg">Red Flags</button>
+        <button type="button" data-mode="management" class="mode-btn flex-1 min-w-0 border-r border-gray-200 px-2 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50">Mgt</button>
+        <button type="button" data-mode="prescribing" class="mode-btn flex-1 min-w-0 px-2 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-50 rounded-r-lg">Rx</button>
+      </div>
+    </div>
+  </header>
+  <main class="p-2 bg-primaryGray pb-12">
+    <p id="status" class="m-0 text-gray-500">Loading page content…</p>
+    <div id="snapshot" class="mt-2 hidden"></div>
+  </main>
+  <footer class="cb-footer text-center text-xs text-gray-500 py-2">Four Integers Ltd © 2026</footer>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
